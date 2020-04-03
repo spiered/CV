@@ -3,22 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adrien Dumont is a programmer. He knows 5 informatic languages: javascript (Vanilla/JQuery/nodeJS/ReactJS), html, css (Bootstrap), python and C++">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mes contacts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-512/avatar-380-456332.png" />
+  <title>Adrien Dumont</title>
 </head>
 
 <body>
-  <form class="" action="mailto:a.dumont22@ejm.org" method="post" enctype="text/plain">
-    <!--il y a post et get-->
-    <label>Votre e-mail</label>
-    <!--légende/étiquette-->
-    <input type="text" name="password" value="Mail"/><br />
-    <label>Votre mot de passe</label>
-    <input type="email" value="Mail" name="mail"/><br />
-    <label>Présentez-vous</label>
-    <textarea name="présentation" rows="8" cols="80"></textarea><br /><br />
-    <input type="submit" name=""/>
-  </form>
+  <div>
+    <table>
+      <td>
+        <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-380-456332.png" width="150" alt="photo d'Adrien Dumont">
+      </td>
+      <td>
+        <h1>Adrien Dumont</h1>
+        <h4>Etudiant / Développeur</h4>
+      </td>
+
+      </td>
+    </table>
+  </div>
+
+  <h2>A propos de moi:</h2>
+  <p>
+    <pan id="salut"></pan>, je suis un jeune <span id="p_de_vie"></span>. I love to make <strong>websites</strong> and <strong>application</strong>. Vous pouvez retrouver sur ce site web l'ensemble de mes projets, contacts et articles.
+  </p>
+  <hr>
+  <h3>Contacts</h3>
+  <ul>
+    <li>
+      Quora
+    </li>
+    <li>
+      Codepen
+    </li>
+    <li>
+      Stackoverflow
+    </li>
+    <li>
+      Repl.it
+    </li>
+  </ul>
+  <hr>
+  <h3>My hobbies</h3>
+  <ol>
+    <li>
+      Football/Soccer
+    </li>
+    <li>
+      Reading
+    </li>
+    <li>
+      Skateboarding
+    </li>
+  </ol>
+  <hr />
+  <h3>Projets</h3>
+  <ul>
+    <!--unordered list-->
+    <li>
+      Quora
+    </li>
+    <li>
+      Codepen
+    </li>
+    <li>
+      Stackoverflow
+    </li>
+    <li>
+      Repl.it
+    </li>
+  </ul>
+  <hr>
+  <h3>My hobbies</h3>
+  <ol>
+    <li>
+      Football/Soccer
+    </li>
+    <li>
+      Reading
+    </li>
+    <li>
+      Skateboarding
+    </li>
+  </ol>
+  <a href="contact.html">Contact</a>
+  <script>
+    let s = document.getElementById("salut");
+    var p = document.getElementById("p_de_vie");
+    var d = new Date();
+    var h = d.getHours();
+    var y = d.getYear();
+    var y = y + 1900
+    if (h < 18) {
+      s.innerHTML = "Bonjour"
+    } else if (h >= 18) {
+      s.innerHTML = "Bonsoir"
+    }
+    if (y < 2022) {
+      p.innerHTML = "Lycéen"
+    } else if (h >= 2022) {
+      s.innerHTML = "Etudiant"
+    }
+  </script>
 </body>
 
 </html>
